@@ -4,7 +4,6 @@ session_start();
 if (!isset($_SESSION['tasks'])) {
     $_SESSION['tasks'] = [];
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +24,7 @@ if (!isset($_SESSION['tasks'])) {
     <main>
         <div class="container">
             <form method="POST" action="action.php?action=add">
-                <input class="form-control form-control-lg" type="text" name="titre" placeholder="entrer une tache" aria-label=".form-control-lg example">
+                <input class="form-control form-control-lg" value="<?= $_POST["titre"] ?? "" ?>" type="text" name="titre" placeholder="entrer une tache" aria-label=".form-control-lg example" required>
                 <button class="btn btn-danger me-md-2 mt-3" type="submit">Enregistrer la tache</button>
             </form>
         </div>
