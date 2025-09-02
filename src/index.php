@@ -25,12 +25,12 @@ if (!isset($_SESSION['tasks'])) {
         <div class="container">
             <form method="POST" action="action.php?action=add">
                 <input class="form-control form-control-lg" value="<?= $_POST["titre"] ?? "" ?>" type="text" name="titre" placeholder="entrer une tache" aria-label=".form-control-lg example" required>
-                <button class="btn btn-danger me-md-2 mt-3" type="submit">Enregistrer la tache</button>
+                <button class="eb btn me-md-2 mt-3" type="submit">Enregistrer la tache</button>
             </form>
         </div>
         <div class="container">
             <form method="POST" action="todo.php">
-                <button class="btn btn-danger me-md-2 mt-3" type="submit">liste des taches</button>
+                <button class="eb btn me-md-2 mt-3" type="submit">liste des taches</button>
             </form>
         </div>
     </main>

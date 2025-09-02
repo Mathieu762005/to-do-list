@@ -28,3 +28,11 @@ body {
     border: 1px solid #00CFDC;
     color: #00CFDC;
 }
+
+.eb {
+    background-color: #00CFDC;
+}
+.eb:hover {
+    color: #00CFDC;
+    border: 1px solid #00CFDC;
+}
