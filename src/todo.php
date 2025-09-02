@@ -28,7 +28,7 @@ if (!isset($_SESSION['tasks'])) {
             <?php foreach ($_SESSION['tasks'] as $index => $task): ?>
                 <li class="liste d-flex justify-content-between align-items-center ps-3 py-2 mb-2 rounded-3">
                     <a href="action.php?action=toggle&index=<?= $index ?>">
-                        <button class="validé btn<?= $task->isDone() ? 'btn text-white btn-success terminee' : '' ?>">Validé</button>
+                        <button class="btn validé<?= $task->isDone() ? 'btn terminee' : '' ?>">Validé</button>
                     </a>
                     <div class="titreCenter text-start">
                         <span class="text-start text-white"><?= $task->getTitle() ?></span>

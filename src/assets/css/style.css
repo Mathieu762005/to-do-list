@@ -29,6 +29,19 @@ body {
     color: #00CFDC;
 }
 
+.terminee {
+    background-color: #00CFDC;
+    color: black;
+}
+.validé:hover {
+    color: #00CFDC;
+    border: 1px solid #00CFDC;
+}
+.terminee:hover {
+    color: black;
+    background-color: #00CFDC;
+}
+
 .eb {
     background-color: #00CFDC;
 }
