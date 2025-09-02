@@ -1,0 +1,17 @@
+body {
+background-color: rgb(52, 52, 52);
+}
+
+.containerMain {
+    height: 70vh;
+    width: 40%;
+    background-color: rgb(121, 121, 121);
+}
+
+.titreCenter {
+    width: 20rem;
+}
+
+.liste {
+    background-color: rgb(79, 79, 79);
+}

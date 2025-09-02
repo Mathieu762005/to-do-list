@@ -1,9 +1,9 @@
 <?php
-if(!isset($_SESSION['tasks'])) {
+if (!isset($_SESSION['tasks'])) {
     $_SESSION['tasks'] = [];
 }
 
-class task
+class Task
 {
     private string $title;
     private bool $isDone;
@@ -12,7 +12,7 @@ class task
     {
         return $this->title;
     }
-    public function setTitle( $title)
+    public function setTitle($title)
     {
         $this->title = $title;
     }
@@ -32,16 +32,15 @@ class task
         $this->setIsDone($isDone);
     }
 
-    public function isDone(bool $isDone, $title) {
-        $this->getisDone($isDone);
-        $this->getTitle($title);
+    public function isDone()
+    {
+        return $this->isDone;
     }
 
-    public function toggle() {
+    public function toggle(): void
+    {
         $this->isDone = !$this->isDone;
     }
 
-    public function __toString() {
-
-    }
+    public function __toString() {}
 }
