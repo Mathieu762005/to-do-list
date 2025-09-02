@@ -26,9 +26,9 @@ if (!isset($_SESSION['tasks'])) {
     <main class="containerMain border border-danger mx-auto p-3 rounded-3">
         <ul style="list-style-type: none;">
             <?php foreach ($_SESSION['tasks'] as $index => $task): ?>
-                <li class="liste d-flex justify-content-between align-items-center ps-3 mb-2 rounded-3">
+                <li class="liste d-flex justify-content-between align-items-center ps-3 py-2 mb-2 rounded-3">
                     <a href="action.php?action=toggle&index=<?= $index ?>">
-                        <input type="checkbox" <?= $task->isDone() ? 'checked' : '' ?>>
+                        <button class="btn border border-success text-success <?= $task->isDone() ? 'btn text-white btn-success terminee' : '' ?>">Validé</button>
                     </a>
                     <div class="titreCenter text-start">
                         <span class="fw-bold text-start text-white"><?= $task->getTitle() ?></span>
@@ -39,10 +39,11 @@ if (!isset($_SESSION['tasks'])) {
                 </li>
             <?php endforeach; ?>
         </ul>
+
     </main>
     <footer>
         <div class="container text-center my-3">
-            <a class="btn btn-warning fw-bold fs-4" href="index.php">Revenir à l'accueil</a>
+            <a class="btn btn-danger fw-bold fs-4" href="index.php"><i class="bi bi-x-lg"></i></a>
         </div>
     </footer>
 </body>

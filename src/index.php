@@ -26,7 +26,7 @@ if (!isset($_SESSION['tasks'])) {
         <div class="container">
             <form method="POST" action="action.php?action=add">
                 <input class="form-control form-control-lg" type="text" name="titre" placeholder="entrer une tache" aria-label=".form-control-lg example">
-                <button class="btn btn-danger me-md-2 mt-3" type="submit">crée une tache</button>
+                <button class="btn btn-danger me-md-2 mt-3" type="submit">Enregistrer la tache</button>
             </form>
         </div>
         <div class="container">
