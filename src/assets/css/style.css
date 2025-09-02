@@ -1,11 +1,13 @@
 body {
-background-color: rgb(52, 52, 52);
+    background-image: url(../../assets/img/abstrait-numerique-grille-fond-noir.jpg);
+    background-size: cover;
 }
 
 .containerMain {
     height: 70vh;
     width: 40%;
     background-color: rgb(121, 121, 121);
+    border: 2px solid #00CFDC;
 }
 
 .titreCenter {
@@ -14,4 +16,15 @@ background-color: rgb(52, 52, 52);
 
 .liste {
     background-color: rgb(79, 79, 79);
+}
+
+.h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    color: #00CFDC;
+}
+
+.validé {
+    border: 1px solid #00CFDC;
+    color: #00CFDC;
 }

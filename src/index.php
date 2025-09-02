@@ -19,7 +19,7 @@ if (!isset($_SESSION['tasks'])) {
 
 <body>
     <header>
-        <h1 class="text-center my-5 text-white" style="font-size: 60px;">Gestionnaire de taches</h1>
+        <h1 class="h1 text-center my-5" style="font-size: 60px;">Gestionnaire de taches</h1>
     </header>
     <main>
         <div class="container">

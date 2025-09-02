@@ -21,20 +21,20 @@ if (!isset($_SESSION['tasks'])) {
 
 <body>
     <header>
-        <h1 class="text-center py-5 text-white" style="font-size: 60px;">Liste des taches</h1>
+        <h1 class="h1 text-center py-5" style="font-size: 60px;">Liste des taches</h1>
     </header>
-    <main class="containerMain border border-danger mx-auto p-3 rounded-3">
+    <main class="containerMain mx-auto p-3 rounded-4">
         <ul style="list-style-type: none;">
             <?php foreach ($_SESSION['tasks'] as $index => $task): ?>
                 <li class="liste d-flex justify-content-between align-items-center ps-3 py-2 mb-2 rounded-3">
                     <a href="action.php?action=toggle&index=<?= $index ?>">
-                        <button class="btn border border-success text-success <?= $task->isDone() ? 'btn text-white btn-success terminee' : '' ?>">Validé</button>
+                        <button class="validé btn<?= $task->isDone() ? 'btn text-white btn-success terminee' : '' ?>">Validé</button>
                     </a>
                     <div class="titreCenter text-start">
-                        <span class="fw-bold text-start text-white"><?= $task->getTitle() ?></span>
+                        <span class="text-start text-white"><?= $task->getTitle() ?></span>
                     </div>
                     <a href="action.php?action=delete&index=<?= $index ?>" class="btn" title="Supprimer">
-                        <i class="bi bi-trash-fill text-danger fs-4"></i>
+                        <i class="ib bi bi-trash-fill fs-4"></i>
                     </a>
                 </li>
             <?php endforeach; ?>
