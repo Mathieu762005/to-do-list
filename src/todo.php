@@ -34,7 +34,7 @@ if (!isset($_SESSION['tasks'])) {
                         <span class="fw-bold text-start text-white"><?= $task->getTitle() ?></span>
                     </div>
                     <a href="action.php?action=delete&index=<?= $index ?>" class="btn" title="Supprimer">
-                        <i class="bi bi-trash-fill text-danger"></i>
+                        <i class="bi bi-trash-fill text-danger fs-4"></i>
                     </a>
                 </li>
             <?php endforeach; ?>
@@ -43,7 +43,7 @@ if (!isset($_SESSION['tasks'])) {
     </main>
     <footer>
         <div class="container text-center my-3">
-            <a class="btn btn-danger fw-bold fs-4" href="index.php"><i class="bi bi-x-lg"></i></a>
+            <a class="btn btn-danger fw-bold fs-4" href="index.php"><i class="bi bi-x-lg"></i> Retour</a>
         </div>
     </footer>
 </body>
